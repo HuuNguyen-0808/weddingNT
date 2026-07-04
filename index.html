@@ -1,16 +1,219 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Hữu Nguyên & Nguyễn Ngọc Bích Trâm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nguyễn Hữu Nguyên & Nguyễn Ngọc Bích Trâm</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Montserrat,sans-serif;
+background:#f8f5f1;
+color:#444;
+}
+
+.hero{
+
+height:100vh;
+
+background:url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=80") center center/cover;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+position:relative;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+
+background:rgba(0,0,0,.35);
+
+}
+
+.content{
+
+position:relative;
+z-index:2;
+
+color:white;
+
+}
+
+h1{
+
+font-family:"Cormorant Garamond",serif;
+font-size:72px;
+font-weight:600;
+
+}
+
+h2{
+
+font-family:"Cormorant Garamond",serif;
+font-size:34px;
+margin-top:15px;
+
+}
+
+.date{
+
+margin-top:25px;
+
+font-size:20px;
+
+letter-spacing:3px;
+
+}
+
+button{
+
+margin-top:45px;
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-3px);
+
+}
+
+section{
+
+max-width:1000px;
+
+margin:auto;
+
+padding:100px 25px;
+
+}
+
+.title{
+
+font-size:48px;
+
+font-family:"Cormorant Garamond";
+
+margin-bottom:25px;
+
+text-align:center;
+
+}
+
+.text{
+
+line-height:2;
+
+text-align:center;
+
+font-size:18px;
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>Wedding Website</h1>
+<div class="hero">
 
-<p>Nguyễn Hữu Nguyên ❤️ Nguyễn Ngọc Bích Trâm</p>
+<div class="content">
+
+<h2>We're Getting Married</h2>
+
+<h1>Nguyên & Trâm</h1>
+
+<p class="date">08 · 08 · 2026</p>
+
+<button onclick="document.getElementById('story').scrollIntoView()">
+Khám phá
+</button>
+
+</div>
+
+</div>
+
+<section id="story">
+
+<h2 class="title">
+Câu chuyện của chúng mình
+</h2>
+
+<p class="text">
+
+2015<br><br>
+
+Chúng mình gặp nhau khi còn là những người bạn cùng lớp.
+
+<br><br>
+
+2020<br><br>
+
+Sau nhiều năm, chúng mình gặp lại nhau.
+
+<br><br>
+
+Từ tình bạn...
+
+đến tình yêu.
+
+<br><br>
+
+Từ tình yêu...
+
+đến lời hứa sẽ cùng nhau đi hết cuộc đời.
+
+<br><br>
+
+Ngày 08 · 08 · 2026
+
+một hành trình mới chính thức bắt đầu.
+
+</p>
+
+</section>
 
 </body>
 
